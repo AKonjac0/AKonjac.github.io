@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="画横线的都是弃了的番 看过的番2020.4 我的脑内恋碍选项 梦开始的地方  2020.7 中二病也要谈恋爱 六花kawa   某魔法的禁书目录 用脚做魔禁   某科学的超电磁炮 用心做超炮   日在校园 诚哥战斗过的地方  Re0  缘之空 那万一有了就堕掉好了  2020.10 clannad 高一看枯了   辉夜大小姐 赤坂我超耐磨   龙与虎 掌中萌虎  2021 jojo 豪堪  进击的">
+    <meta name="description" content="番画横线的都是弃了的番 看过的番2020.4 我的脑内恋碍选项 梦开始的地方  2020.7 中二病也要谈恋爱 六花kawa   某魔法的禁书目录 用脚做魔禁   某科学的超电磁炮 用心做超炮   日在校园 诚哥战斗过的地方  Re0  缘之空 那万一有了就堕掉好了  2020.10 clannad 高一看枯了   辉夜大小姐 赤坂我超耐磨   龙与虎 掌中萌虎  2021 jojo 豪堪  进击">
 <meta property="og:type" content="website">
 <meta property="og:title" content="bangumi">
 <meta property="og:url" content="http://akonjac0.github.io/bangumi/index.html">
 <meta property="og:site_name" content="My blog">
-<meta property="og:description" content="画横线的都是弃了的番 看过的番2020.4 我的脑内恋碍选项 梦开始的地方  2020.7 中二病也要谈恋爱 六花kawa   某魔法的禁书目录 用脚做魔禁   某科学的超电磁炮 用心做超炮   日在校园 诚哥战斗过的地方  Re0  缘之空 那万一有了就堕掉好了  2020.10 clannad 高一看枯了   辉夜大小姐 赤坂我超耐磨   龙与虎 掌中萌虎  2021 jojo 豪堪  进击的">
+<meta property="og:description" content="番画横线的都是弃了的番 看过的番2020.4 我的脑内恋碍选项 梦开始的地方  2020.7 中二病也要谈恋爱 六花kawa   某魔法的禁书目录 用脚做魔禁   某科学的超电磁炮 用心做超炮   日在校园 诚哥战斗过的地方  Re0  缘之空 那万一有了就堕掉好了  2020.10 clannad 高一看枯了   辉夜大小姐 赤坂我超耐磨   龙与虎 掌中萌虎  2021 jojo 豪堪  进击">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-09-28T12:14:33.000Z">
-<meta property="article:modified_time" content="2025-10-15T11:32:54.135Z">
+<meta property="article:modified_time" content="2026-01-02T14:47:48.180Z">
 <meta property="article:author" content="AKonjac_">
 <meta name="twitter:card" content="summary">
     
@@ -55,7 +55,97 @@
     
 	<!-- mathjax -->
 	
-<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+<!-- hexo injector head_end start -->
+<style>
+  .link-card-container {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none !important;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 120px; /* 占位高度 */
+  }
+  .link-card-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: #d0d0d0;
+  }
+  
+  /* 加载中的骨架屏动画 */
+  .link-card-loading {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+  }
+  @keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  .link-card-loaded .link-card-loading { display: none; }
+
+  .link-card-body {
+    display: flex;
+    height: 120px;
+    color: #333;
+  }
+  .link-card-content {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .link-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #222;
+  }
+  .link-card-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: auto;
+  }
+  .link-card-host {
+    font-size: 12px;
+    color: #999;
+    margin-top: 6px;
+  }
+  .link-card-image {
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+    border-left: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+  }
+  @media screen and (max-width: 600px) {
+    .link-card-body { height: auto; flex-direction: column-reverse; }
+    .link-card-image { width: 100%; height: 150px; border-left: none; border-bottom: 1px solid #f0f0f0; }
+    .link-card-content { padding: 12px; }
+  }
+</style>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -206,11 +296,11 @@ mjx-container[display="true"] + br {
 
   <div class="content" itemprop="articleBody">
       
-          <p><del>画横线的都是弃了的番</del></p>
-<h1 id="看过的番"><a href="#看过的番" class="headerlink" title="看过的番"></a>看过的番</h1><h2 id="2020-4"><a href="#2020-4" class="headerlink" title="2020.4"></a>2020.4</h2><blockquote>
+          <h1 id="番"><a href="#番" class="headerlink" title="番"></a>番</h1><p><del>画横线的都是弃了的番</del></p>
+<h2 id="看过的番"><a href="#看过的番" class="headerlink" title="看过的番"></a>看过的番</h2><h3 id="2020-4"><a href="#2020-4" class="headerlink" title="2020.4"></a>2020.4</h3><blockquote>
 <p>我的脑内恋碍选项 梦开始的地方</p>
 </blockquote>
-<h2 id="2020-7"><a href="#2020-7" class="headerlink" title="2020.7"></a>2020.7</h2><blockquote>
+<h3 id="2020-7"><a href="#2020-7" class="headerlink" title="2020.7"></a>2020.7</h3><blockquote>
 <p>中二病也要谈恋爱 六花kawa</p>
 </blockquote>
 <blockquote>
@@ -227,7 +317,7 @@ mjx-container[display="true"] + br {
 <p>缘之空</p>
 <p>那万一有了就堕掉好了</p>
 </blockquote>
-<h2 id="2020-10"><a href="#2020-10" class="headerlink" title="2020.10"></a>2020.10</h2><blockquote>
+<h3 id="2020-10"><a href="#2020-10" class="headerlink" title="2020.10"></a>2020.10</h3><blockquote>
 <p>clannad</p>
 <p>高一看枯了</p>
 </blockquote>
@@ -237,7 +327,7 @@ mjx-container[display="true"] + br {
 <blockquote>
 <p>龙与虎 掌中萌虎</p>
 </blockquote>
-<h2 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h2><blockquote>
+<h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><blockquote>
 <p>jojo 豪堪</p>
 </blockquote>
 <p>进击的巨人</p>
@@ -254,7 +344,7 @@ mjx-container[display="true"] + br {
 <p>kon</p>
 <p>四谎</p>
 <p>小埋</p>
-<h2 id="2022"><a href="#2022" class="headerlink" title="2022"></a>2022</h2><p>玉子市场</p>
+<h3 id="2022"><a href="#2022" class="headerlink" title="2022"></a>2022</h3><p>玉子市场</p>
 <blockquote>
 <p>玉子爱情故事 <del>我喜欢饼藏</del></p>
 </blockquote>
@@ -334,20 +424,20 @@ mjx-container[display="true"] + br {
 <p>未来日记 由乃我老婆</p>
 </blockquote>
 <p>实教</p>
-<h2 id="2023-1"><a href="#2023-1" class="headerlink" title="2023.1"></a>2023.1</h2><blockquote>
+<h3 id="2023-1"><a href="#2023-1" class="headerlink" title="2023.1"></a>2023.1</h3><blockquote>
 <p>灵能百分百 豪堪</p>
 </blockquote>
-<h2 id="2023-4"><a href="#2023-4" class="headerlink" title="2023.4"></a>2023.4</h2><p>月色真美 </p>
+<h3 id="2023-4"><a href="#2023-4" class="headerlink" title="2023.4"></a>2023.4</h3><p>月色真美 </p>
 <p>虚构推理</p>
 <blockquote>
 <p>人渣的本愿 打了, 但没看完</p>
 </blockquote>
-<h2 id="2023-7"><a href="#2023-7" class="headerlink" title="2023.7"></a>2023.7</h2><p>龙王的工作</p>
+<h3 id="2023-7"><a href="#2023-7" class="headerlink" title="2023.7"></a>2023.7</h3><p>龙王的工作</p>
 <p>珈百璃的堕落</p>
 <p><del>日常</del></p>
 <p><del>凉宫春日</del></p>
 <p><del>赛马娘</del></p>
-<h2 id="2023-10"><a href="#2023-10" class="headerlink" title="2023.10"></a>2023.10</h2><p><del>Darling in the Franxx</del> </p>
+<h3 id="2023-10"><a href="#2023-10" class="headerlink" title="2023.10"></a>2023.10</h3><p><del>Darling in the Franxx</del> </p>
 <blockquote>
 <p>恋爱随意链接 心之壁太厚，最后补完了</p>
 </blockquote>
@@ -355,17 +445,17 @@ mjx-container[display="true"] + br {
 <p>一周的朋友 豪堪</p>
 </blockquote>
 <p>加油同期酱</p>
-<h2 id="2024-1"><a href="#2024-1" class="headerlink" title="2024.1"></a>2024.1</h2><p>jose的虎与鱼</p>
-<h2 id="2024-4"><a href="#2024-4" class="headerlink" title="2024.4"></a>2024.4</h2><blockquote>
+<h3 id="2024-1"><a href="#2024-1" class="headerlink" title="2024.1"></a>2024.1</h3><p>jose的虎与鱼</p>
+<h3 id="2024-4"><a href="#2024-4" class="headerlink" title="2024.4"></a>2024.4</h3><blockquote>
 <p><del>京吹 泷夫人竞选番</del></p>
 </blockquote>
-<h2 id="2024-7"><a href="#2024-7" class="headerlink" title="2024.7"></a>2024.7</h2><blockquote>
+<h3 id="2024-7"><a href="#2024-7" class="headerlink" title="2024.7"></a>2024.7</h3><blockquote>
 <p>乒乓 豪堪</p>
 </blockquote>
 <blockquote>
 <p>GBC 冰</p>
 </blockquote>
-<h2 id="2024-10"><a href="#2024-10" class="headerlink" title="2024.10"></a>2024.10</h2><blockquote>
+<h3 id="2024-10"><a href="#2024-10" class="headerlink" title="2024.10"></a>2024.10</h3><blockquote>
 <p>Mygo 梅姨阁诗人</p>
 </blockquote>
 <blockquote>
@@ -388,7 +478,7 @@ mjx-container[display="true"] + br {
 <p><del>圣诞之吻</del><br><del>为了看佐藤利奈</del></p>
 </blockquote>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.068ex;" xmlns="http://www.w3.org/2000/svg" width="0.629ex" height="3.009ex" role="img" focusable="false" viewBox="0 -1300 278 1330"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mo"><path data-c="22EE" d="M78 30Q78 54 95 72T138 90Q162 90 180 74T199 31Q199 6 182 -12T139 -30T96 -13T78 30ZM78 440Q78 464 95 482T138 500Q162 500 180 484T199 441Q199 416 182 398T139 380T96 397T78 440ZM78 840Q78 864 95 882T138 900Q162 900 180 884T199 841Q199 816 182 798T139 780T96 797T78 840Z"></path></g></g></g></g></svg></mjx-container></p>
-<h2 id="2025-1"><a href="#2025-1" class="headerlink" title="2025.1"></a>2025.1</h2><blockquote>
+<h3 id="2025-1"><a href="#2025-1" class="headerlink" title="2025.1"></a>2025.1</h3><blockquote>
 <p>夏日的隧道, 再见的出口 finale 豪庭</p>
 </blockquote>
 <blockquote>
@@ -397,7 +487,7 @@ mjx-container[display="true"] + br {
 <blockquote>
 <p>幸运星 Darling Darling Pleaze!</p>
 </blockquote>
-<h2 id="2025-4"><a href="#2025-4" class="headerlink" title="2025.4"></a>2025.4</h2><blockquote>
+<h3 id="2025-4"><a href="#2025-4" class="headerlink" title="2025.4"></a>2025.4</h3><blockquote>
 <p>凉宫春日的忧郁</p>
 <p><del>其实我萌的是单马尾</del></p>
 </blockquote>
@@ -405,7 +495,7 @@ mjx-container[display="true"] + br {
 <p>凉宫春日的消失</p>
 <p>YUKI.N &gt; Ready?</p>
 </blockquote>
-<h2 id="2025-7"><a href="#2025-7" class="headerlink" title="2025.7"></a>2025.7</h2><blockquote>
+<h3 id="2025-7"><a href="#2025-7" class="headerlink" title="2025.7"></a>2025.7</h3><blockquote>
 <p>绝命毒师</p>
 <p>-say my name</p>
 <p>-《化学老师贩冰冰》《药叶露营》《蛊毒药滚》《冰名为癌》《春日瘾》《瘾色舞》《卖克白》《磅多利：一次买够》《堡磕梦》《沃的氢醇敛癌物语果然有问题》《中二冰爷想贪敛癌》《药楽萘》《氩托锂: 沃致癌的时光》</p>
@@ -428,7 +518,7 @@ mjx-container[display="true"] + br {
 <p>終わるまでは終わらないよ</p>
 <p>Po Pa Po Pa Po Pa Pan~</p>
 </blockquote>
-<h2 id="2025-10"><a href="#2025-10" class="headerlink" title="2025.10"></a>2025.10</h2><blockquote>
+<h3 id="2025-10"><a href="#2025-10" class="headerlink" title="2025.10"></a>2025.10</h3><blockquote>
 <p>Clannad 二周目</p>
 <p>同时期在推 galgame</p>
 <p>时隔 5 年再看, 又有不一样的感受</p>
@@ -509,17 +599,17 @@ mjx-container[display="true"] + br {
 <p>琉璃的宝石</p>
 <p>矿物学导论说是</p>
 </blockquote>
-<h1 id="季番"><a href="#季番" class="headerlink" title="季番"></a>季番</h1><h2 id="2020-1"><a href="#2020-1" class="headerlink" title="2020.1"></a>2020.1</h2><p>超炮3</p>
-<h2 id="2021-1"><a href="#2021-1" class="headerlink" title="2021.1"></a>2021.1</h2><p>Re:0 2</p>
+<h2 id="季番"><a href="#季番" class="headerlink" title="季番"></a>季番</h2><h3 id="2020-1"><a href="#2020-1" class="headerlink" title="2020.1"></a>2020.1</h3><p>超炮3</p>
+<h3 id="2021-1"><a href="#2021-1" class="headerlink" title="2021.1"></a>2021.1</h3><p>Re:0 2</p>
 <p>Beastars 2</p>
-<h2 id="2021-4"><a href="#2021-4" class="headerlink" title="2021.4"></a>2021.4</h2><p>megalobox 2</p>
+<h3 id="2021-4"><a href="#2021-4" class="headerlink" title="2021.4"></a>2021.4</h3><p>megalobox 2</p>
 <blockquote>
 <p><del>剃须</del> 打了</p>
 </blockquote>
 <p>史莱姆日记</p>
-<h2 id="2021-7"><a href="#2021-7" class="headerlink" title="2021.7"></a>2021.7</h2><p>史莱姆 2</p>
+<h3 id="2021-7"><a href="#2021-7" class="headerlink" title="2021.7"></a>2021.7</h3><p>史莱姆 2</p>
 <p>龙女仆 2</p>
-<h2 id="2021-10"><a href="#2021-10" class="headerlink" title="2021.10"></a>2021.10</h2><blockquote>
+<h3 id="2021-10"><a href="#2021-10" class="headerlink" title="2021.10"></a>2021.10</h3><blockquote>
 <p><del>因为不是真正的伙伴而被逐出勇者队伍，流落到边境展开慢活人生</del> 打了</p>
 </blockquote>
 <p>无职</p>
@@ -527,11 +617,11 @@ mjx-container[display="true"] + br {
 <p><del>国王排名</del></p>
 <p><del>鬼灭 游郭篇</del></p>
 <p><del>约战 4（延期至2022.4）</del></p>
-<h2 id="2022-1"><a href="#2022-1" class="headerlink" title="2022.1"></a>2022.1</h2><p>更衣人偶坠入爱河</p>
-<h2 id="2022-4"><a href="#2022-4" class="headerlink" title="2022.4"></a>2022.4</h2><p>辉夜 3</p>
+<h3 id="2022-1"><a href="#2022-1" class="headerlink" title="2022.1"></a>2022.1</h3><p>更衣人偶坠入爱河</p>
+<h3 id="2022-4"><a href="#2022-4" class="headerlink" title="2022.4"></a>2022.4</h3><p>辉夜 3</p>
 <p>间谍过家家</p>
 <p>夏日重现</p>
-<h2 id="2022-7"><a href="#2022-7" class="headerlink" title="2022.7"></a>2022.7</h2><p>Lycoris</p>
+<h3 id="2022-7"><a href="#2022-7" class="headerlink" title="2022.7"></a>2022.7</h3><p>Lycoris</p>
 <p>Engage kiss</p>
 <blockquote>
 <p>在异世界迷宫开后宫 打了</p>
@@ -541,29 +631,29 @@ mjx-container[display="true"] + br {
 <p>继母的拖油瓶是我的前女友 糖丸了</p>
 </blockquote>
 <p>异世界舅舅</p>
-<h2 id="2022-10"><a href="#2022-10" class="headerlink" title="2022.10"></a>2022.10</h2><blockquote>
+<h3 id="2022-10"><a href="#2022-10" class="headerlink" title="2022.10"></a>2022.10</h3><blockquote>
 <p>电锯人 姬野前辈，你在天堂能听到吗，这是我们为你献上的镇魂曲</p>
 </blockquote>
 <p>孤独摇滚</p>
 <p><del>间谍过家家 Part 2</del></p>
-<h2 id="2023-1-1"><a href="#2023-1-1" class="headerlink" title="2023.1"></a>2023.1</h2><blockquote>
+<h3 id="2023-1-1"><a href="#2023-1-1" class="headerlink" title="2023.1"></a>2023.1</h3><blockquote>
 <p><del>宝可梦：地平线</del> 我的小智呢</p>
 </blockquote>
-<h2 id="2023-4-1"><a href="#2023-4-1" class="headerlink" title="2023.4"></a>2023.4</h2><p>为美好世界献上爆炎</p>
+<h3 id="2023-4-1"><a href="#2023-4-1" class="headerlink" title="2023.4"></a>2023.4</h3><p>为美好世界献上爆炎</p>
 <p>勇者死了</p>
 <p><del>我推的孩子</del></p>
-<h2 id="2023-7-1"><a href="#2023-7-1" class="headerlink" title="2023.7"></a>2023.7</h2><p><del>白圣女与黑牧师</del></p>
+<h3 id="2023-7-1"><a href="#2023-7-1" class="headerlink" title="2023.7"></a>2023.7</h3><p><del>白圣女与黑牧师</del></p>
 <p><del>无职转生 2</del></p>
-<h2 id="2023-10-1"><a href="#2023-10-1" class="headerlink" title="2023.10"></a>2023.10</h2><blockquote>
+<h3 id="2023-10-1"><a href="#2023-10-1" class="headerlink" title="2023.10"></a>2023.10</h3><blockquote>
 <p>葬送的芙莉莲 豪堪</p>
 </blockquote>
 <p><del>间谍过家家 2</del></p>
-<h2 id="2024-1-1"><a href="#2024-1-1" class="headerlink" title="2024.1"></a>2024.1</h2><p>没看，没意思</p>
-<h2 id="2024-4-1"><a href="#2024-4-1" class="headerlink" title="2024.4"></a>2024.4</h2><p>girls band cry</p>
+<h3 id="2024-1-1"><a href="#2024-1-1" class="headerlink" title="2024.1"></a>2024.1</h3><p>没看，没意思</p>
+<h3 id="2024-4-1"><a href="#2024-4-1" class="headerlink" title="2024.4"></a>2024.4</h3><p>girls band cry</p>
 <p>blue archive</p>
 <p>素晴 3</p>
 <p><del>京吹 3</del></p>
-<h2 id="2024-7-1"><a href="#2024-7-1" class="headerlink" title="2024.7"></a>2024.7</h2><blockquote>
+<h3 id="2024-7-1"><a href="#2024-7-1" class="headerlink" title="2024.7"></a>2024.7</h3><blockquote>
 <p>败犬女主 make!</p>
 </blockquote>
 <blockquote>
@@ -572,19 +662,19 @@ mjx-container[display="true"] + br {
 <blockquote>
 <p><del>鹿乃子</del> 唐</p>
 </blockquote>
-<h2 id="2024-10-1"><a href="#2024-10-1" class="headerlink" title="2024.10"></a>2024.10</h2><p><del>DAN DA DAN</del></p>
+<h3 id="2024-10-1"><a href="#2024-10-1" class="headerlink" title="2024.10"></a>2024.10</h3><p><del>DAN DA DAN</del></p>
 <p><del>Re0:3</del></p>
 <p><del>Beastars</del></p>
 <p><del>夏目友人帐</del></p>
 <p><del>青之箱</del> </p>
-<h2 id="2025-1-1"><a href="#2025-1-1" class="headerlink" title="2025.1"></a>2025.1</h2><blockquote>
+<h3 id="2025-1-1"><a href="#2025-1-1" class="headerlink" title="2025.1"></a>2025.1</h3><blockquote>
 <p>Ave Mujica </p>
 <p>折戟罢酒诗煌翩</p>
 <p>折戟罢旧史诗</p>
 </blockquote>
 <p><del>我下巴独自升级</del></p>
-<h2 id="2025-4-1"><a href="#2025-4-1" class="headerlink" title="2025.4"></a>2025.4</h2><p><del>夏日口袋</del></p>
-<h2 id="2025-7-1"><a href="#2025-7-1" class="headerlink" title="2025.7"></a>2025.7</h2><p>碧蓝之海2</p>
+<h3 id="2025-4-1"><a href="#2025-4-1" class="headerlink" title="2025.4"></a>2025.4</h3><p><del>夏日口袋</del></p>
+<h3 id="2025-7-1"><a href="#2025-7-1" class="headerlink" title="2025.7"></a>2025.7</h3><p>碧蓝之海2</p>
 <blockquote>
 <p>更衣人偶2</p>
 <p>去看 Maple Star (</p>
@@ -605,22 +695,16 @@ mjx-container[display="true"] + br {
 <p>吊带袜天使 2</p>
 <p>Stocking kawa</p>
 </blockquote>
-<h2 id="2025-10-1"><a href="#2025-10-1" class="headerlink" title="2025.10"></a>2025.10</h2><blockquote>
-<p>SANDA</p>
-<p>神人</p>
-</blockquote>
-<blockquote>
-<p>Let’s Play!</p>
-<p>神人</p>
-</blockquote>
+<h3 id="2025-10-1"><a href="#2025-10-1" class="headerlink" title="2025.10"></a>2025.10</h3><p><del>SANDA</del></p>
+<p><del>Let’s Play!</del></p>
 <blockquote>
 <p>弹珠同学</p>
-<p>最神人</p>
-<p>不是嘉豪都代入不了</p>
-<p>还有羊宫妃那死羊叫给我气笑了</p>
+<p>羊宫妃那死羊叫给我气笑了</p>
 </blockquote>
-<p>byd 这季度全是神人番, 荣获《黄金大份》季</p>
-<h1 id="待看"><a href="#待看" class="headerlink" title="待看"></a>待看</h1><!--
+<!-- byd 这季度全是神人番, 荣获《黄金大份》季 -->
+
+<p>没有好看的, 玩 blacksouls 去了(</p>
+<h2 id="待看"><a href="#待看" class="headerlink" title="待看"></a>待看</h2><!--
 香格里拉边境
 
 圣剑学院的魔剑使
@@ -791,7 +875,7 @@ lovelive
 
 ~~偶像大师~~ 来看円香的 -->
 
-<h1 id="续作组"><a href="#续作组" class="headerlink" title="续作组"></a>续作组</h1><p>败犬 2</p>
+<h2 id="续作组"><a href="#续作组" class="headerlink" title="续作组"></a>续作组</h2><p>败犬 2</p>
 <p>无职 2 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 3</p>
 <p>超炮 4</p>
 <p><del>mygo/mujica</del> 接着赤</p>
@@ -800,7 +884,7 @@ lovelive
 <p>芙莉莲 2</p>
 <p>碧蓝之海 2 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>更衣人偶 2 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 3</p>
-<h1 id="公路片"><a href="#公路片" class="headerlink" title="公路片"></a>公路片</h1><p>狼与香辛料 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<h2 id="公路片"><a href="#公路片" class="headerlink" title="公路片"></a>公路片</h2><p>狼与香辛料 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>摇曳露营 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
 <p>少女终末旅行 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>魔女之旅</p>
@@ -809,7 +893,7 @@ lovelive
 <p>奇诺之旅</p>
 <p>虫师</p>
 <p>妖精森林的小不点</p>
-<h1 id="治愈番"><a href="#治愈番" class="headerlink" title="治愈番"></a>治愈番</h1><p>eva <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<h2 id="治愈番"><a href="#治愈番" class="headerlink" title="治愈番"></a>治愈番</h2><p>eva <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>死亡笔记</p>
 <p>魔法少女小圆 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>寒蝉 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
@@ -830,14 +914,14 @@ lovelive
 <p>心理测量者</p>
 <p>沙耶之歌</p>
 <p>来自新世界</p>
-<h1 id="考古"><a href="#考古" class="headerlink" title="考古"></a>考古</h1><p>钢炼 FA <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
+<h2 id="考古"><a href="#考古" class="headerlink" title="考古"></a>考古</h2><p>钢炼 FA <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
 <p>Fate/Zero</p>
 <p>鲁鲁修</p>
 <p>比世界更远的地方</p>
 <p>白箱</p>
-<h1 id="企划"><a href="#企划" class="headerlink" title="企划"></a>企划</h1><p>赛马娘</p>
+<h2 id="企划"><a href="#企划" class="headerlink" title="企划"></a>企划</h2><p>赛马娘</p>
 <p>BanG Dream</p>
-<h1 id="搞黄色"><a href="#搞黄色" class="headerlink" title="搞黄色"></a>搞黄色</h1><blockquote>
+<h2 id="搞黄色"><a href="#搞黄色" class="headerlink" title="搞黄色"></a>搞黄色</h2><blockquote>
 <p>拔作岛 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>金金金果欧芒果</p>
 </blockquote>
@@ -845,9 +929,56 @@ lovelive
 <p>人渣的本愿 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>异世界迷宫开后宫 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
 <p>回复术士的重启人生 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
-<h1 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h1><h2 id="二游"><a href="#二游" class="headerlink" title="二游"></a>二游</h2><p>蔚蓝档案 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
-<h2 id="STG"><a href="#STG" class="headerlink" title="STG"></a>STG</h2><h3 id="东方-project"><a href="#东方-project" class="headerlink" title="东方 project"></a>东方 project</h3><p>东方红魔乡</p>
-<h2 id="galgame"><a href="#galgame" class="headerlink" title="galgame"></a>galgame</h2><h3 id="十二神器"><a href="#十二神器" class="headerlink" title="十二神器"></a>十二神器</h3><p>君与他与她之恋</p>
+<h1 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h1><h2 id="二游"><a href="#二游" class="headerlink" title="二游"></a>二游</h2><blockquote>
+<p>蔚蓝档案 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container> [2023.10~2023.11]</p>
+<p>已退坑, 看二创去了 (</p>
+</blockquote>
+<h2 id="STG"><a href="#STG" class="headerlink" title="STG"></a>STG</h2><p>东方红魔乡 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
+<h2 id="RPG"><a href="#RPG" class="headerlink" title="RPG"></a>RPG</h2><p>undertale [2020.1<del>2020.4,2025.11</del>至今(屠杀线)]</p>
+<p>之前打屠杀打到 MTT 发现前面怪没杀干净, 回到普通线了, 气死我了</p>
+<h3 id="pokemon"><a href="#pokemon" class="headerlink" title="pokemon"></a>pokemon</h3><p>红绿蓝黄</p>
+<p>金银</p>
+<p>火红<strong>叶绿</strong> [gen3][2019] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<p>红蓝<strong>绿宝石</strong> [gen3][2019] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<p>钻石<strong>珍珠</strong> [gen4][2022] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<p><strong>黑</strong>白 [gen5][2022] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<p><strong>X</strong>Y [gen6][2024] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
+<p>日月 [gen7]</p>
+<p><strong>剑</strong>盾 [gen8][2022] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<p>朱<strong>紫</strong> [gen9][2023] <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<blockquote>
+</blockquote>
+<h3 id="blacksouls"><a href="#blacksouls" class="headerlink" title="blacksouls"></a>blacksouls</h3><blockquote>
+<p>blacksouls <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container> [2025.11.6~2025.11.10]</p>
+<p>莉耶芙 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="1.357ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 600 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mo"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">✘</text></g></g></g></g></svg></mjx-container> 芙莉耶 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.077ex;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.674ex" role="img" focusable="false" viewBox="0 -706 833 740"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="2713" d="M84 231Q84 244 114 264T170 285Q176 285 183 274T224 205Q267 129 268 129Q271 141 279 163T318 250T389 378T502 523T662 673Q702 706 732 706H734Q749 706 749 695Q749 682 730 666T660 607T559 505Q387 299 328 29Q324 0 295 -17T245 -34H241Q234 -34 225 -21T185 46Q166 79 154 101Q84 223 84 231Z"></path></g></g></g></svg></mjx-container></p>
+<p>dorothy daisuki</p>
+</blockquote>
+<blockquote>
+<p>blacksouls 2 [2025.12.2~至今]</p>
+<p>我的师匠 ToT</p>
+<p>再见啦, 笨蛋弟子. 就算受到了挫折, 也不要放弃啊. 我也是这么, 一路走过来的——</p>
+</blockquote>
+<h2 id="galgame"><a href="#galgame" class="headerlink" title="galgame"></a>galgame</h2><h3 id="时间排序"><a href="#时间排序" class="headerlink" title="时间排序"></a>时间排序</h3><blockquote>
+<p>DDLC [2025.7.1~2025.7.3] </p>
+<p>启蒙作就是这种, 为后面玩十二神器奠定基础(</p>
+</blockquote>
+<blockquote>
+<p>命运石之门 [2025.8.2~2025.8.16]</p>
+<p>神作</p>
+</blockquote>
+<blockquote>
+<p>Clannad [2025.10.4~至今]</p>
+<p>画风略抽象, 前期也略催眠. 游戏整体挺好, 只是不如动画那么好</p>
+<p>这么一看京阿尼改编真配得上动画史上最高评分</p>
+</blockquote>
+<p>命运石之门 比翼恋理的爱人 [2025.10.5~至今]</p>
+<blockquote>
+<p>素晴日 [2025.10.10~至今]</p>
+<p>据说前三章神作, 后面一般了</p>
+</blockquote>
+<!-- > 白色相簿 2 -->
+
+<h3 id="十二神器"><a href="#十二神器" class="headerlink" title="十二神器"></a>十二神器</h3><p>君与他与她之恋</p>
 <p>素晴日</p>
 <p>沙耶之歌 (虚渊玄我喜欢你)</p>
 <p>euphoria (有动画)</p>
@@ -861,15 +992,73 @@ lovelive
 <p>Ever17</p>
 <p>白色相簿 2 (有动画)</p>
 <p>fate</p>
+<p>魔法少女的魔女审判 (等打折)</p>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>remember 11</p>
 <!-- 东京喰种 -->
 
+<p>死棺 (神人二创非常对我胃口)</p>
+<p>美少女万花镜</p>
+<!-- <iframe src="https://steamcommunity.com/profiles/76561199518305549/" width="100%" height="500" frameborder="0" loading="lazy" allowfullscreen></iframe> -->
 
 
 
+  <a class="link-card-container" href="https://steamcommunity.com/profiles/76561199518305549/" target="_blank" data-need-fetch="true">
+    <div class="link-card-loading">Loading preview...</div>
+    <div class="link-card-body">
+      <div class="link-card-content">
+        <div class="link-card-title">https://steamcommunity.com/profiles/76561199518305549/</div>
+        <div class="link-card-desc"></div>
+        <div class="link-card-host"></div>
+      </div>
+      <div class="link-card-image"></div>
+    </div>
+  </a>
+  
 
 
-<p>OST 欣赏: 狼与香辛料, 来自深渊, 琉璃的宝石</p>
+<hr>
+<h1 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h1><h2 id="vocaloid"><a href="#vocaloid" class="headerlink" title="vocaloid"></a>vocaloid</h2><blockquote>
+<p>kikuo</p>
+<p>神</p>
+<p>this is true music</p>
+<p>recommend: 爱我爱我爱我, 洞穴生活, <del>不登校</del>我不在学校的日子里, </p>
+</blockquote>
+<blockquote>
+<p>giga </p>
+<p>豪庭</p>
+<p>kpop 的感觉</p>
+<p>recommend: GimmexGimme, 踊, 劣等上等</p>
+</blockquote>
+<blockquote>
+<p>wowaka</p>
+<p>wwk, 她还在唱着你的歌啊</p>
+<p>recommend: unknown goose, 世末舞厅, rolling girl, 里表情人</p>
+</blockquote>
+<blockquote>
+<p>匹</p>
+<p>暧昧酱 kawa</p>
+<p>recommend: 无呼吸义务, 像神一样呐, 转生林檎, 呐呐呐</p>
+</blockquote>
+<blockquote>
+<p>deco</p>
+<p>这位更是 vocaloid 詹姆斯</p>
+<p>recommend: 妄想代偿感伤联盟</p>
+</blockquote>
+<blockquote>
+<p>玛莎拉达</p>
+<p>recommend: 小我, 无责任</p>
+</blockquote>
+<h3 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h3><p>雄之助 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
+<p>sasakure.UK</p>
+<p>Frog</p>
+<p>春野</p>
+<p>胃弱 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
+<p>煮儿果实</p>
+<p>春卷饭</p>
+<p>怪力熊 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.559ex" role="img" focusable="false" viewBox="0 -689 778 689"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="25FB" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></g></g></g></svg></mjx-container></p>
+<p>八王子</p>
+<p>米津玄师</p>
+<h2 id="OST"><a href="#OST" class="headerlink" title="OST"></a>OST</h2><h3 id="todo-1"><a href="#todo-1" class="headerlink" title="todo"></a>todo</h3><p>狼与香辛料, 来自深渊, 琉璃的宝石, blacksouls</p>
 
         
   </div>
@@ -929,5 +1118,47 @@ lovelive
 
 <!-- utterances Comments -->
 
-</body>
+<!-- hexo injector body_end start -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.link-card-container[data-need-fetch="true"]');
+    
+    cards.forEach(card => {
+      const url = card.getAttribute('href');
+      // 使用 Microlink 免费 API 获取元数据
+      fetch('https://api.microlink.io/?url=' + encodeURIComponent(url))
+        .then(res => res.json())
+        .then(data => {
+          if (data.status === 'success') {
+            const meta = data.data;
+            const titleDiv = card.querySelector('.link-card-title');
+            const descDiv = card.querySelector('.link-card-desc');
+            const imgDiv = card.querySelector('.link-card-image');
+            const hostDiv = card.querySelector('.link-card-host');
+            
+            // 填充数据
+            titleDiv.innerText = meta.title || url;
+            descDiv.innerText = meta.description || '';
+            hostDiv.innerText = new URL(url).hostname;
+            
+            if (meta.image && meta.image.url) {
+              imgDiv.style.backgroundImage = 'url(' + meta.image.url + ')';
+            } else {
+              // 如果没有图片，就隐藏图片区域（或者显示默认图）
+              // imgDiv.style.display = 'none'; 
+            }
+            
+            // 移除 Loading 遮罩
+            card.classList.add('link-card-loaded');
+          }
+        })
+        .catch(err => {
+          console.error('Link Card fetch error:', err);
+          // 失败也移除遮罩，显示默认信息
+           card.classList.add('link-card-loaded');
+        });
+    });
+  });
+</script>
+<!-- hexo injector body_end end --></body>
 </html>
